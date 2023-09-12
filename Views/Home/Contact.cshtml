@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <p class="lead text-center">Feel free to reach out to us using the following contact information or the contact form below:</p>
+
+            <!-- Contact Information -->
+            <div class="card mb-4">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://d1le3ohiuslpz1.cloudfront.net/skillcrush/wp-content/uploads/2018/10/Blog_Full-stack-dev.jpg" alt="Contact Us" class="img-fluid" style="max-width: 150px;"> <!-- Adjusted max-width -->
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Contact Information</h5>
+                            <address>
+                                <p><strong>Email:</strong> malekera.jenny@gmail.com</p>
+                                <p><strong>Phone:</strong> (123) 456-7890</p>
+                                <p><strong>Address:</strong> 123 Main Street, Cityville, Country</p>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Send Us a Message</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="contactName" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="contactEmail" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="contactMessage" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Custom styles for the Contact Us page */
+    .card {
+        margin-top: 20px;
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    address {
+        font-size: 1.25rem;
+        margin-top: 10px;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+</style>
